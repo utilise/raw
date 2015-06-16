@@ -25,6 +25,20 @@ describe('raw', function() {
     expect(raw('.class .sub').className).to.be.eql('sub 1')
   })
 
+ it('should pierce boundaries if supports shadow dom', function(){
+    var realShadow = document.head.createShadowRoot
+      , realQuery = document.querySelector
+      , result 
+
+    document.querySelector = function(selector){ result = selector; return [] }
+    document.head.createShadowRoot = true
+    raw('.class li')
+    expect(result).to.be.eql('html /deep/ .class li')
+
+    document.head.createShadowRoot = realShadow
+    document.querySelectorAll = realQuery
+  })
+
 })
 
 function polyfill(){
