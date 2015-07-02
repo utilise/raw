@@ -36,7 +36,7 @@ describe('raw', function() {
     expect(result).to.be.eql('html /deep/ .class li')
 
     document.head.createShadowRoot = realShadow
-    document.querySelectorAll = realQuery
+    document.querySelector = realQuery
   })
 
 })
