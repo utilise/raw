@@ -12,6 +12,7 @@
     "chai": "^2.3.0",
     "client": "git+https://github.com/utilise/client.git",
     "coveralls": "^2.11.2",
+    "is": "git+https://github.com/utilise/is.git",
     "istanbul": "^0.3.13",
     "jsdom": "^5.4.3",
     "mocha": "^2.2.4",
