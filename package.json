@@ -1,5 +1,5 @@
 {
-  "name": "raw",
+  "name": "utilise.raw",
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,9 @@
   "license": "pemrouz.mit-license.org",
   "devDependencies": {
     "chai": "^2.3.0",
-    "client": "git+https://github.com/utilise/client.git",
+    "utilise.client": "*",
     "coveralls": "^2.11.2",
-    "is": "git+https://github.com/utilise/is.git",
+    "utilise.is": "*",
     "istanbul": "^0.3.13",
     "jsdom": "^5.4.3",
     "mocha": "^2.2.4",

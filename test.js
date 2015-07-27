@@ -1,8 +1,8 @@
 var expect = require('chai').expect
-  , client = require('client')
+  , client = require('utilise.client')
   , shim = !client && polyfill()
   , raw = require('./')
-  , is = require('is')
+  , is = require('utilise.is')
   , node 
 
 describe('raw', function() {
